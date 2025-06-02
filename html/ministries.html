@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libya Gov - Ministries</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #ministries-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 40px;
+            text-align: center;
+        }
+        .ministry {
+            padding: 25px;
+            border: none;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+        .ministry:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+        .ministry p {
+            font-size: 16px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            font-size: 28px;
+            color: #002147;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home | الرئيسية</a></li>
+                <li><a href="about-libya.html">About Libya | عن ليبيا</a></li>
+                <li><a href="#">Ministries | الوزارات</a></li>
+                <li><a href="e-services.html">Services | الخدمات</a></li>
+                <li><a href="contact.html">Contact | اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="ministries-grid">
+            <h1 style="grid-column: 1 / -1;">Ministries | الوزارات</h1>
+            <div class="ministry">
+                <p>Ministry of Health | وزارة الصحة</p>
+            </div>
+            <div class="ministry">
+                <p>Ministry of Interior | وزارة الداخلية</p>
+            </div>
+            <div class="ministry">
+                <p>Ministry of Education | وزارة التعليم</p>
+            </div>
+            <div class="ministry">
+                <p>Ministry of Foreign Affairs | وزارة الخارجية</p>
+            </div>
+            <!-- Add more ministries as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Libya Gov. All rights reserved. | جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html> 
