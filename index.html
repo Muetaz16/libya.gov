@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libya Gov - Homepage</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f7f9fc;
+            font-family: 'Roboto', sans-serif;
+        }
+        header {
+            background-color: #002147;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ffcc00;
+            transition: width .3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        #welcome-banner {
+            background-image: url('../assets/libya.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 400px;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #welcome-banner h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        #welcome-banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        #welcome-banner button {
+            background-color: #ffcc00;
+            color: #002147;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        #welcome-banner button:hover {
+            background-color: #ffdd33;
+            transform: scale(1.05);
+        }
+        #quick-access, #latest-news, #national-statistics {
+            padding: 40px;
+            background-color: #fff;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        #quick-access:hover, #latest-news:hover, #national-statistics:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        #quick-access h2, #latest-news h2, #national-statistics h2 {
+            font-size: 24px;
+            color: #002147;
+            margin-bottom: 20px;
+        }
+        .access-item, .news-item, .stats-item {
+            margin-bottom: 20px;
+        }
+        .access-item h3, .news-item h3, .stats-item h3 {
+            font-size: 20px;
+            color: #ffcc00;
+            margin-bottom: 10px;
+        }
+        .access-item p, .news-item p, .stats-item p {
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            background-color: #002147;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home | الرئيسية</a></li>
+                <li><a href="about-libya.html">About Libya | عن ليبيا</a></li>
+                <li><a href="ministries.html">Ministries | الوزارات</a></li>
+                <li><a href="e-services.html">Services | الخدمات</a></li>
+                <li><a href="contact.html">Contact | اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="welcome-banner">
+            <h1>Welcome to Libya Gov | مرحبًا بكم في ليبيا جوف</h1>
+            <p>Your official digital gateway to government services. | بوابتك الرقمية الرسمية للخدمات الحكومية.</p>
+            <button>Explore Services | استكشاف الخدمات</button>
+        </section>
+        <section id="quick-access">
+            <h2>Quick Access | الوصول السريع</h2>
+            <div class="access-item">
+                <h3>Top Services | الخدمات الرئيسية</h3>
+                <p>Access the most popular services quickly. | الوصول إلى الخدمات الأكثر شيوعًا بسرعة.</p>
+            </div>
+            <div class="access-item">
+                <h3>Latest Updates | آخر التحديثات</h3>
+                <p>Stay informed with the latest news and updates. | ابقَ على اطلاع بآخر الأخبار والتحديثات.</p>
+            </div>
+        </section>
+        <section id="latest-news">
+            <h2>Latest National News | آخر الأخبار الوطنية</h2>
+            <p>Catch up on the latest happenings in Libya. | تابع آخر الأحداث في ليبيا.</p>
+        </section>
+        <section id="national-statistics">
+            <h2>National Statistics | الإحصاءات الوطنية</h2>
+            <p>Get insights into national data and statistics. | احصل على رؤى حول البيانات والإحصاءات الوطنية.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Libya Gov. All rights reserved. | جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html> 
